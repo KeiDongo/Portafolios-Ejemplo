@@ -1,0 +1,446 @@
+@import url('https://fonts.googleapis.com/css2?family = Rowdies:wght@300;400;700&display=swap');
+
+* {
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Rowdies', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #1E1E1E 0%, #221724, #2E1134 100%);
+    background-size: 400% 400%;  
+    min-height: 100vh;
+    animation: gradient 30s ease infinite;
+}
+
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.header {
+    background-color: rgba(0, 0, 0, .3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85px;
+    padding: 5px;
+    border-bottom: 5px solid rgba(0, 0, 0, .3);
+    font-size: 20px;
+}
+
+.header nav ul {
+    display: flex;
+    gap: 100px;
+    list-style: none;
+}
+
+.header nav a {
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.header nav a:hover {
+    color: #431A85;
+}
+
+.header nav li {
+    transition: all 0.3s;
+}
+
+.header nav li:hover {
+    transform: scale(1.1);
+}
+
+.main {
+    animation: fadeIn 1.8s ease-out forwards;
+    opacity: 0;
+    margin: 25px auto 0 100px;
+    padding: 0 20px;
+    max-width: 800px;
+    color: white;
+}
+
+.main h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    transition: all 0.3s ease-out;
+}
+
+.main p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    transition: all 0.3s ease-out;
+}
+.highlight {
+    color: #784CBF;
+}
+
+.lenguajes {
+    margin: 40px auto;
+    padding: 30px;
+    max-width: 1300px;
+    color: white;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    text-align: center;
+}
+
+.tecnologias-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.tecnologia-btn {
+    padding: 14px 12px;
+    border: 2px solid;
+    border-radius: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    background: rgba(20, 20, 20, 0.8);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+ 
+.html {
+    color: #FF8C66;
+    border-color: #E44D26;
+     
+}
+
+.css {
+    color: #66A3FF;
+    border-color: #2965F1;
+     
+}
+
+.js {
+    color: #F0DB4F;
+    border-color: #F0DB4F;
+     
+}
+
+.react {
+    color: #61DAFB;
+    border-color: #61DAFB;
+     
+}
+
+.node {
+    color: #8CC84B;
+    border-color: #3C873A;
+     
+}
+
+.python {
+    color: #FFD43B;
+    border-color: #FFD43B;
+     
+}
+
+.mongo {
+    color: #4DB33D;
+    border-color: #3FA037;
+     
+}
+
+.postgres {
+    color: #336791;
+    border-color: #336791;
+     
+}
+
+.gml {
+    color: #8EDE23;
+    border-color: #8EDE23;
+     
+}
+
+.unity {
+    color: #FFFFFF;
+    border-color: #787878;
+     
+}
+
+ 
+
+ 
+.tecnologia-btn:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+    background: rgba(30, 30, 30, 0.9);
+    z-index: 2;
+}
+
+/* Animación sutil al cargar */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.tecnologia-btn {
+    animation: fadeIn 0.6s ease-out forwards;
+    opacity: 0;
+}
+
+/* Retrasos escalonados para la animación */
+.tecnologia-btn:nth-child(1) { animation-delay: 0.1s; }
+.tecnologia-btn:nth-child(2) { animation-delay: 0.2s; }
+.tecnologia-btn:nth-child(3) { animation-delay: 0.3s; }
+ 
+
+.proyectos {
+    margin: 60px auto;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+.proyectos h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 40px;
+    color: white;
+    position: relative;
+}
+        
+.proyectos h2::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(90deg, #784CBF, #431A85);
+    margin: 15px auto 0;
+    border-radius: 2px;
+}
+        
+.proyectos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 30px;
+}
+        
+.proyecto-card {
+    background: rgba(30, 30, 30, 0.7);
+    border-radius: 15px;
+    overflow: hidden;
+    border: 1px solid rgba(120, 76, 191, 0.3);
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+        
+        .proyecto-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(120, 76, 191, 0.4);
+            border-color: rgba(120, 76, 191, 0.6);
+        }
+        
+        .proyecto-img {
+            height: 200px;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .proyecto-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+        
+        .proyecto-card:hover .proyecto-img img {
+            transform: scale(1.05);
+        }
+        
+        .proyecto-content {
+            padding: 25px;
+        }
+        
+        .proyecto-tech {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 15px 0;
+        }
+        
+        .tech-tag {
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            color: white;
+            background: rgba(120, 76, 191, 0.2);
+            border: 1px solid rgba(120, 76, 191, 0.4);
+        }
+        
+        .proyecto-title {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+        
+        .proyecto-desc {
+            color: #ccc;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        
+        .proyecto-links {
+            display: flex;
+            gap: 15px;
+        }
+        
+        .proyecto-btn {
+            padding: 8px 20px;
+            border-radius: 6px;
+            font-weight: bold;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.3s;
+        }
+        
+        .demo-btn {
+            background: #784CBF;
+            color: white;
+        }
+        
+        .code-btn {
+            background: rgba(120, 76, 191, 0.2);
+            color: #784CBF;
+            border: 1px solid #784CBF;
+        }
+        
+        .proyecto-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(120, 76, 191, 0.4);
+        }
+        
+        
+        .proyecto-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at var(--x) var(--y), 
+                        rgba(120, 76, 191, 0.1), transparent 70%);
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        
+        .proyecto-card:hover::before {
+            opacity: 1;
+        }
+.contacto {
+            margin: 80px auto;
+            max-width: 800px;
+            padding: 0 20px;
+            text-align: center;
+        }
+
+        .contacto h2 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            color: white;
+            position: relative;
+        }
+
+        .contacto h2::after {
+            content: '';
+            display: block;
+            width: 100px;
+            height: 4px;
+            background: linear-gradient(90deg, #784CBF, #431A85);
+            margin: 15px auto 0;
+            border-radius: 2px;
+        }
+
+        .contacto-desc {
+            color: #ccc;
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 40px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .contacto-botones {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .contacto-btn {
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            min-width: 200px;
+            justify-content: center;
+        }
+
+        .gmail-btn {
+            background: linear-gradient(135deg, #EA4335, #D14836);
+            color: white;
+            border: 2px solid #EA4335;
+        }
+
+        .linkedin-btn {
+            background: linear-gradient(135deg, #0077B5, #00A0DC);
+            color: white;
+            border: 2px solid #0077B5;
+        }
+
+        .contacto-btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 20px rgba(0, 0, 0, 0.4);
+            filter: brightness(1.1);
+        }
+
+        .contacto-btn i {
+            font-size: 1.4rem;
+        }
+
+     
+        .contacto-btn::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 50px;
+            background: radial-gradient(circle, rgba(255,255,255,0.3) 0%, transparent 70%);
+            opacity: 0;
+            transition: opacity 0.3s, transform 0.3s;
+            transform: scale(0.8);
+        }
+
+        .contacto-btn : hover::after {
+        opacity       : 1;
+        transform     : scale(1);
+        }

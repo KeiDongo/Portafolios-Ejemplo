@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portafolios</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav>    
+            <ul class="nav-links">
+                <li><a href="#">Personal</a></li>
+                <li><a href="#">Trayectoria</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Proyectos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="main">
+            <h1>Soy <span class="highlight">Andriu</span> Huise</h1>
+            <p>
+                <span class="highlight">Desarrollador Full-Stack</span>
+                con pasión por construir soluciones digitales de principio a fin. Combinando creatividad <span class="highlight">frontend</span> con arquitecturas <span class="highlight">backend</span> robustas, diseño experiencias que no solo son visualmente atractivas, sino también escalables y eficientes.
+                Mi enfoque va más allá del código: <span class="highlight">entiendo las necesidades del usuario</span> y las convierto en
+                <span class="highlight">productos funcionales que generan impacto.</span>
+            </p>
+        </div>
+        <div class="lenguajes">
+    <h2>Tecnologías y Lenguajes</h2>
+    <div class="tecnologias-grid">
+        <!-- Frontend -->
+        <button class="tecnologia-btn html">
+            <i class="fab fa-html5"></i> HTML5
+        </button>
+        <button class="tecnologia-btn css">
+            <i class="fab fa-css3-alt"></i> CSS3
+        </button>
+        <button class="tecnologia-btn js">
+            <i class="fab fa-js-square"></i> JavaScript
+        </button>
+        <button class="tecnologia-btn react">
+            <i class="fab fa-react"></i> React
+        </button>
+        
+        <!-- Backend -->
+        <button class="tecnologia-btn node">
+            <i class="fab fa-node-js"></i> Node.js
+        </button>
+        <button class="tecnologia-btn python">
+            <i class="fab fa-python"></i> Python
+        </button>
+        
+        <!-- Bases de datos -->
+        <button class="tecnologia-btn mongo">
+            <i class="fas fa-database"></i> MongoDB
+        </button>
+        <button class="tecnologia-btn postgres">
+            <i class="fas fa-database"></i> PostgreSQL
+        </button>
+        
+        <!-- Game Development -->
+        <button class="tecnologia-btn gml">
+            <i class="fas fa-gamepad"></i> GML
+        </button>
+        <button class="tecnologia-btn unity">
+            <i class="fas fa-gamepad"></i> Unity
+        </button>
+    </div>
+
+</div>
+<section class="proyectos">
+        <h2>Mis Proyectos</h2>
+        <div class="proyectos-grid">
+            <!-- Proyecto 1 -->
+            <div class="proyecto-card" onmousemove="moveLight(event, this)">
+                <div class="proyecto-img">
+                    <img src="https://edit.org/img/blog/dhd-plantilla-e-commerce-banners-editables.jpg" alt="Proyecto E-Commerce">
+                </div>
+                <div class="proyecto-content">
+                    <h3 class="proyecto-title">Tienda Virtual</h3>
+                    <p class="proyecto-desc">
+                        Plataforma de e-commerce completa con carrito de compras, pasarela de pagos y panel de administración.
+                    </p>
+                    <div class="proyecto-tech">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">Stripe API</span>
+                    </div>
+                    <div class="proyecto-links">
+                        <a href="#" class="proyecto-btn demo-btn">
+                            <i class="fas fa-external-link-alt"></i> Demo
+                        </a>
+                        <a href="#" class="proyecto-btn code-btn">
+                            <i class="fab fa-github"></i> Código
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Proyecto 2 -->
+            <div class="proyecto-card" onmousemove="moveLight(event, this)">
+                <div class="proyecto-img">
+                    <img src="https://images.gamebanana.com/img/ss/mods/64fe3712ab2ac.jpg" alt="Proyecto Juego">
+                </div>
+                <div class="proyecto-content">
+                    <h3 class="proyecto-title">Aventura Pixel Art</h3>
+                    <p class="proyecto-desc">
+                        Juego 2D desarrollado con Game Maker Studio 2, con mecánicas innovadoras y diseño retro.
+                    </p>
+                    <div class="proyecto-tech">
+                        <span class="tech-tag">GML</span>
+                        <span class="tech-tag">Aseprite</span>
+                        <span class="tech-tag">Pixel Art</span>
+                    </div>
+                    <div class="proyecto-links">
+                        <a href="#" class="proyecto-btn demo-btn">
+                            <i class="fas fa-gamepad"></i> Jugar
+                        </a>
+                        <a href="#" class="proyecto-btn code-btn">
+                            <i class="fab fa-github"></i> Assets
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Proyecto 3 -->
+            <div class="proyecto-card" onmousemove="moveLight(event, this)">
+                <div class="proyecto-img">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi54X3N30CxfYI_WazAszyHBm0vuO2xcg-Eg&s" alt="imagen de gato bien pro DAMNNNNNNNNNNN!!!">
+                </div>
+                <div class="proyecto-content">
+                    <h3 class="proyecto-title">Panel de Analytics</h3>
+                    <p class="proyecto-desc">
+                        Dashboard interactivo para visualización de datos con gráficos en tiempo real y exportación a PDF.
+                    </p>
+                    <div class="proyecto-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Django</span>
+                        <span class="tech-tag">Chart.js</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                    </div>
+                    <div class="proyecto-links">
+                        <a href="#" class="proyecto-btn demo-btn">
+                            <i class="fas fa-chart-line"></i> Ver Demo
+                        </a>
+                        <a href="#" class="proyecto-btn code-btn">
+                            <i class="fab fa-github"></i> Código
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contacto">
+    <h2>Contacto</h2>
+    <p class="contacto-desc">
+        ¿Interesado en trabajar juntos o tienes alguna pregunta? No dudes en contactarme a través de estos medios.
+    </p>
+    <div class="contacto-botones">
+        <button class="contacto-btn gmail-btn">
+            <i class="fab fa-google"></i> Gmail
+        </a>
+        <button class="contacto-btn linkedin-btn" 
+           style="position:relative; z-index:1; width:auto; height:auto;">
+            <i class="fab fa-linkedin-in"></i> LinkedIn
+        </a>
+    </div>
+</section>
+    <p style="color: white;">esta pagina es mi orgullo, es mas si tuviera pipi se lo mamo</p>
+    </main>
+</body>
+</html>
